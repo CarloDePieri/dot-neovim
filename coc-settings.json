@@ -1,0 +1,17 @@
+{
+  "diagnostic.errorSign": "✘",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  // Yaml language server
+  // "yaml.format.enable":true,
+  "yaml.validate":false,
+  "yaml.schemas":{},
+    // "file:///home/cik/dev/ansible/ansible-role-2.9.json": ["*.yml", "*.yaml"]
+    // "file:///home/cik/dev/ansible/ansible-playbook.json": ["*.yml", "*.yaml"],
+    // "https://json.schemastore.org/ansible-collection-galaxy": ["*/meta/main.yml", "**/meta/main.yml"]
+  // },
+  // Python language server
+  "python.linting.flake8Enabled":true,
+  "coc.preferences.formatOnSaveFiletypes":["python"]
+
+}
