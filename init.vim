@@ -17,6 +17,12 @@ source $HOME/.config/nvim/plug-config/surround.vim                              
 source $HOME/.config/nvim/plug-config/fzf.vim                                     " Fzf inside vim!
 source $HOME/.config/nvim/plug-config/codi.vim                                    " REPL
 source $HOME/.config/nvim/plug-config/coc.vim                                     " Autocompletion
+source $HOME/.config/nvim/plug-config/snippets.vim                                " Snippets
+source $HOME/.config/nvim/plug-config/test.vim                                    " TDD
+source $HOME/.config/nvim/plug-config/pytest-vim-compiler.vim                     " Pytest :compiler
+source $HOME/.config/nvim/plug-config/grammarous.vim                              " English grammar
+source $HOME/.config/nvim/plug-config/markdown.vim                                " Markdown preview
+" source $HOME/.config/nvim/plug-config/dispatch.vim                              " Async runner TODO
 
 " General settings, functions and autocmd
 source $HOME/.config/nvim/general/settings.vim

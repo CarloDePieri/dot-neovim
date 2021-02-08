@@ -11,6 +11,7 @@
     // "https://json.schemastore.org/ansible-collection-galaxy": ["*/meta/main.yml", "**/meta/main.yml"]
   // },
   // Python language server
+  "python.formatting.autopep8Args":["--max-line-length=100"],
   "python.linting.flake8Enabled":true,
   "coc.preferences.formatOnSaveFiletypes":["python"]
 

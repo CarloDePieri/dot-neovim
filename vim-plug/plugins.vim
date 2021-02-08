@@ -24,7 +24,12 @@ Plug 'airblade/vim-rooter'                                " auto change dir to p
 Plug 'Konfekt/vim-CtrlXA'                                 " Use ctrl-X/A to toggle values
 Plug 'metakirby5/codi.vim'                                " REPL
 Plug 'neoclide/coc.nvim', {'branch': 'release'}           " Autocompletion
-Plug 'neoclide/coc-snippets'                              " Snippets
+Plug 'SirVer/ultisnips'                                   " Snippet engine (needs coc-ultisnips coc extension)
+Plug 'honza/vim-snippets'                                 " Snippets
+Plug 'tpope/vim-dispatch'                                 " job async dispatcher, used primarily for tests
+Plug 'reinh/vim-makegreen'                                " Run sync make with visual feedback
+Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }           " Intelligently close windows
+
 
 " Movement
 Plug 'unblevable/quick-scope'                             " Show char when using f, t, etc
@@ -39,6 +44,10 @@ Plug 'jiangmiao/auto-pairs'                               " Autopair
 
 " Language specific
 Plug 'kevinoid/vim-jsonc'                                 " Json with comments
+Plug 'cespare/vim-toml'                                   " toml syntax highlights
+Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
+Plug 'rhysd/vim-grammarous'                               " English grammar
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " Markdown browser preview
 
 " Vim
 Plug 'Shougo/neco-vim'

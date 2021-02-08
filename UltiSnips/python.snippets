@@ -1,0 +1,63 @@
+global !p
+import re
+def test_name(current: str) -> str:
+	current = current.lower() \
+									 .replace(" ", "_") \
+									 .replace(".", "") \
+									 .replace(",", "") \
+									 .replace("?", "") \
+									 .replace("!", "") \
+									 .replace("__", "_") \
+									 .replace("\n", "") \
+									 .rstrip("_")
+	current = re.sub(r'__*', "_", current)
+	return current
+
+def test_class_name(current: str) -> str:
+		if t[1] == "A description":
+				return "AName"
+		current = current.lower() \
+										 .title() \
+										 .replace(" ", "") \
+										 .replace(".", "") \
+										 .replace(",", "") \
+										 .replace("?", "") \
+										 .replace("!", "") \
+										 .replace("__", "_") \
+										 .replace("\n", "")
+		current = re.sub(r'__*', "_", current)
+		return current
+endglobal
+
+snippet it "A simple pytest test from a test collection" b
+def test_`!p snip.rv = test_name(t[1])`(${2:self}):
+	"""... it ${1:description}"""
+	${3}${0}
+endsnippet
+
+snippet tt "A simple pytest test from a test collection" b
+def test_`!p snip.rv = test_name(t[1])`(${2:self}):
+	"""... it ${1:description}"""
+	${3}${0}
+endsnippet
+
+snippet tcoll "A pytest test collection" b
+class Test`!p snip.rv = test_class_name(t[1])`${2:()}:
+	"""${1:A description}..."""
+
+	${3}${0}
+endsnippet
+
+snippet tts "A single pytest test" b
+def test_`!p snip.rv = test_name(t[1])`(${2}):
+	"""${1:description}"""
+	${3}${0}
+endsnippet
+
+snippet at "Assert True" !b
+assert True
+endsnippet
+
+snippet af "Assert False" !b
+assert False
+endsnippet

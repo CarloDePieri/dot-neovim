@@ -30,7 +30,7 @@ command! -bang -nargs=? -complete=dir GFiles
 " Mappings
 "
 " Open buffers list
-nnoremap <silent><Enter> :Buffers<cr>
+" nnoremap <silent><Enter> :Buffers<cr>
 nnoremap <F11> :Buffers<CR>
 nnoremap <leader>b :Buffers<CR>
 " List files in the cwd

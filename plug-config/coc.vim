@@ -25,6 +25,9 @@
 " coc-sh            Intellisense for bash
 " coc-markdownlint  Linting for markdown
 " coc-yaml          Intellisense for yaml
+" coc-css           Css autocompletion
+" coc-toml          Toml support
+" coc-ultisnips     Provide ultisnips source
 "
 " HOW TO CHANGE PYTHON SEVERITY
 " https://github.com/microsoft/pyright/blob/master/docs/configuration.md#type-check-diagnostics-settings
