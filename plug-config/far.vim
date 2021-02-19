@@ -1,11 +1,14 @@
 "
 " SETTINGS
 "
-let g:far#enable_undo=1   " Enable undos
-let g:far#source="rg"     " Use ripgrep as backend
+let g:far#enable_undo=1     " Enable undos
+let g:far#source="rg"       " Use ripgrep as backend
+let g:far#glob_mode = 'rg'  " Use rg and its glob mode to select files
 
-set lazyredraw            " improve scrolling performance when navigating through large results
-set ignorecase smartcase  " ignore case only when the pattern contains no capital letters
+let g:far#default_file_mask = '*'
+
+set lazyredraw              " improve scrolling performance when navigating through large results
+set ignorecase smartcase    " ignore case only when the pattern contains no capital letters
 
 "
 " MAPPINGS
@@ -14,10 +17,21 @@ nnoremap <silent> <leader>/ :Farf<cr>
 nnoremap <silent> <leader>? viw:Farf<cr>
 vnoremap <silent> <leader>/ :Farf<cr>
 
-nnoremap <silent> <leader>> :Farr<cr>
-nnoremap <silent> <leader>. viw:Farr<cr>
-vnoremap <silent> <leader>. :Farr<cr>
+nnoremap <silent> <leader>. viw:Farrh<cr>
+vnoremap <silent> <leader>. :Farrh<cr>
+nnoremap <silent> <leader>> viw:Farr<cr>
+vnoremap <silent> <leader>> :Farr<cr>
+" nnoremap <leader>. :*/<c-r>=expand("%:t")<cr><home>Far <c-r>=expand("<cword>")<cr>  <left>
+" vnoremap <leader>. y:*/<c-r>=expand("%:t")<cr><home>Far <c-r>0  <left>
 
+command! -complete=customlist,far#FarArgsComplete -nargs=* -range=-1 Farr
+      \  let g:far#default_file_mask = '*' |
+      \  call FarModePrompt(<count>,<line1>,<line2>,1,<q-args>)
+
+command! -complete=customlist,far#FarArgsComplete -nargs=* -range=-1 Farrh
+      \  let g:far#default_file_mask = '*/'.expand('%:t') |
+      \  call FarModePrompt(<count>,<line1>,<line2>,1,<q-args>) |
+      \  let g:far#default_file_mask = '*'
 
 " FAR MAPPINGS              EXPLANATION
 " ---------------------------------------------------------------------------------------------------------------------

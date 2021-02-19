@@ -2,6 +2,7 @@
 " Settings
 "
 let g:EasyMotion_smartcase = 1              " Ignore casing
+let g:EasyMotion_enter_jump_first = 1       " Jump to the first match with enter / space
 
 "
 " Mappings

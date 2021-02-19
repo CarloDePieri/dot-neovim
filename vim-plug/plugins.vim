@@ -29,7 +29,12 @@ Plug 'honza/vim-snippets'                                 " Snippets
 Plug 'tpope/vim-dispatch'                                 " job async dispatcher, used primarily for tests
 Plug 'reinh/vim-makegreen'                                " Run sync make with visual feedback
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }           " Intelligently close windows
-
+Plug 'neomake/neomake'                                    " Run sync make with visual feedback
+Plug 'vim-test/vim-test'                                  " Test launcher
+Plug 'rhysd/devdocs.vim'                                  " Show devdocs docs
+Plug 'tpope/vim-projectionist'                            " Project structure
+Plug 'puremourning/vimspector'                            " Debugger
+Plug 'nvim-treesitter/nvim-treesitter',{'do':':TSUpdate'} " Treesitter - more powerfull syntax highlighter
 
 " Movement
 Plug 'unblevable/quick-scope'                             " Show char when using f, t, etc
@@ -45,29 +50,26 @@ Plug 'jiangmiao/auto-pairs'                               " Autopair
 " Language specific
 Plug 'kevinoid/vim-jsonc'                                 " Json with comments
 Plug 'cespare/vim-toml'                                   " toml syntax highlights
-Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
 Plug 'rhysd/vim-grammarous'                               " English grammar
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " Markdown browser preview
+Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
+" Plug 'CarloDePieri/vim-pytest'
+Plug '~/dev/vim-pytest'
 
 " Vim
 Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 
+
+" Plug 'Zuckonit/vim-airline-tomato'
 call plug#end()
 
 
 " TODO
 "
-" snippets
-" supertab
-"
-" https://github.com/tpope/vim-projectionist              project structure
-"                                                           and alternate files
-"
 " https://github.com/alvan/vim-closetag
 "
 " https://github.com/puremourning/vimspector              debugger
-" https://github.com/vim-test/vim-test                    test runner
 "
 " https://github.com/pearofducks/ansible-vim
 " https://github.com/Glench/Vim-Jinja2-Syntax

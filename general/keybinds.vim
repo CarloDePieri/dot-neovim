@@ -15,8 +15,9 @@ command! WQ wq
 command! Wq wq
 command! W w
 
-" Use cltl-a in command mode
+" Use cltl-a and ctrl-k in command mode
 cnoremap <C-A> <Home>
+cnoremap <C-k> <C-\>e(strpart(getcmdline(), 0, getcmdpos() - 1))<CR>
 
 "
 " Navigation
@@ -45,12 +46,15 @@ nnoremap <C-w>0 <C-w>c
 nmap <leader>2 <C-w>2
 nmap <leader>3 <C-w>3
 
-nnoremap <F12> :wincmd w<CR>
-
+nnoremap <A-Q> :qa<CR>
 nnoremap Q :Sayonara<CR>
-cnoreabbrev wq w<bar>Sayonara
-cnoreabbrev q Sayonara
-cnoreabbrev Sayonara! :Sayonara<CR>s
+" cnoreabbrev wq w<bar>Sayonara
+" cnoreabbrev q Sayonara
+" cnoreabbrev Sayonara! :Sayonara<CR>s
+
+" I hate the command window
+nnoremap <leader>: q:
+nnoremap q: :q
 
 "
 " Text morphing

@@ -167,7 +167,7 @@ body {
   border-top: 1px solid #ccc;
 }
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #242424;
 }
 .markdown-body table th,
 .markdown-body table td {

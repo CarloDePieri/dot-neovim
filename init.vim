@@ -1,29 +1,43 @@
+" This allows to deploy the config in arbitrary folders
+let prefix = "$HOME/.config/nvim/"
+
 " Load plugins
-source $HOME/.config/nvim/vim-plug/plugins.vim
+execute "source " . prefix . "vim-plug/plugins.vim"
 
 " Specify this here so that plugins can know about my leader
 let mapleader = ","
 
-" Config plugins
-source $HOME/.config/nvim/plug-config/quickscope.vim                              " Show char when using f, t, etc
-source $HOME/.config/nvim/plug-config/rnvimr.vim                                  " Ranger integration.
-source $HOME/.config/nvim/plug-config/nerdcommenter.vim                           " Comment code
-source $HOME/.config/nvim/plug-config/barbar.vim                                  " Tabs
-source $HOME/.config/nvim/plug-config/airline.vim                                 " Graphic bottom status bar
-source $HOME/.config/nvim/plug-config/indentline.vim                              " Show indentetion vertical bars
-source $HOME/.config/nvim/plug-config/easymotion.vim                              " Move quickly
-source $HOME/.config/nvim/plug-config/far.vim                                     " Search and replace
-source $HOME/.config/nvim/plug-config/surround.vim                                " Surround words with characters
-source $HOME/.config/nvim/plug-config/fzf.vim                                     " Fzf inside vim!
-source $HOME/.config/nvim/plug-config/codi.vim                                    " REPL
-source $HOME/.config/nvim/plug-config/coc.vim                                     " Autocompletion
-source $HOME/.config/nvim/plug-config/snippets.vim                                " Snippets
-source $HOME/.config/nvim/plug-config/test.vim                                    " TDD
-source $HOME/.config/nvim/plug-config/pytest-vim-compiler.vim                     " Pytest :compiler
-source $HOME/.config/nvim/plug-config/grammarous.vim                              " English grammar
-source $HOME/.config/nvim/plug-config/markdown.vim                                " Markdown preview
-" source $HOME/.config/nvim/plug-config/dispatch.vim                              " Async runner TODO
+" Plugins' config files + my settings and keybinds
+let config_files = [
+      "\ --------- PLUGINS ---------
+      \ "plug-config/quickscope.vim",
+      \ "plug-config/rnvimr.vim",
+      \ "plug-config/nerdcommenter.vim",
+      \ "plug-config/barbar.vim",
+      \ "plug-config/airline.vim",
+      \ "plug-config/indentline.vim",
+      \ "plug-config/easymotion.vim",
+      \ "plug-config/far.vim",
+      \ "plug-config/surround.vim",
+      \ "plug-config/fzf.vim",
+      \ "plug-config/codi.vim",
+      \ "plug-config/coc.vim",
+      \ "plug-config/snippets.vim",
+      \ "plug-config/test.vim",
+      \ "plug-config/pytest-vim-compiler.vim",
+      \ "plug-config/grammarous.vim",
+      \ "plug-config/markdown.vim",
+      \ "plug-config/markdown.vim",
+      \ "plug-config/devdocs.vim",
+      \ "plug-config/pytest.vim",
+      \ "plug-config/projectionist.vim",
+      \ "plug-config/debugger.vim",
+      \ "plug-config/treesitter.vim",
+      "\ --------- SETTINGS ---------
+      \ "general/settings.vim",
+      \ "general/keybinds.vim",
+      \]
 
-" General settings, functions and autocmd
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/general/keybinds.vim
+for config_file in config_files
+  execute  "source " . prefix . config_file
+endfor
