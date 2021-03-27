@@ -48,9 +48,9 @@ nmap <leader>3 <C-w>3
 
 nnoremap <A-Q> :qa<CR>
 nnoremap Q :Sayonara<CR>
-" cnoreabbrev wq w<bar>Sayonara
-" cnoreabbrev q Sayonara
-" cnoreabbrev Sayonara! :Sayonara<CR>s
+cnoreabbrev wq w<bar>Sayonara
+cnoreabbrev q Sayonara
+cnoreabbrev Sayonara! :Sayonara<CR>s
 
 " I hate the command window
 nnoremap <leader>: q:

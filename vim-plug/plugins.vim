@@ -52,9 +52,10 @@ Plug 'kevinoid/vim-jsonc'                                 " Json with comments
 Plug 'cespare/vim-toml'                                   " toml syntax highlights
 Plug 'rhysd/vim-grammarous'                               " English grammar
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " Markdown browser preview
-Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
+" Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
 " Plug 'CarloDePieri/vim-pytest'
 Plug '~/dev/vim-pytest'
+Plug '~/dev/pytest-vim-compiler'                   " Pytest :compiler
 
 " Vim
 Plug 'Shougo/neco-vim'

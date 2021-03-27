@@ -21,8 +21,8 @@ nnoremap <silent> <leader>. viw:Farrh<cr>
 vnoremap <silent> <leader>. :Farrh<cr>
 nnoremap <silent> <leader>> viw:Farr<cr>
 vnoremap <silent> <leader>> :Farr<cr>
-" nnoremap <leader>. :*/<c-r>=expand("%:t")<cr><home>Far <c-r>=expand("<cword>")<cr>  <left>
-" vnoremap <leader>. y:*/<c-r>=expand("%:t")<cr><home>Far <c-r>0  <left>
+nnoremap <leader><leader>. :*/<c-r>=expand("%:t")<cr><home>Far <c-r>=expand("<cword>")<cr>  <left>
+vnoremap <leader><leader>. y:*/<c-r>=expand("%:t")<cr><home>Far <c-r>0  <left>
 
 command! -complete=customlist,far#FarArgsComplete -nargs=* -range=-1 Farr
       \  let g:far#default_file_mask = '*' |

@@ -16,3 +16,8 @@ nnoremap <leader>tx     :w\|PytestLastFailed<CR>
 nnoremap <leader>tt     :w\|PytestToggleError<CR>
 " open <T>est <O>utput
 nnoremap <leader>to     :w\|PytestOutput<CR>
+
+" Mappings useful for navigating the quickfix windowa (even with only one
+" entry)
+nnoremap ]q :<C-R>=len(getqflist())==1?"cc":"cn"<CR><CR>
+nnoremap [q :<C-R>=len(getqflist())==1?"cc":"cp"<CR><CR>

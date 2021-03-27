@@ -9,3 +9,8 @@ let python_poetry = {
       \ },
       \ }
 call extend(g:projectionist_heuristics, python_poetry)
+
+"
+" KEYBINDS
+"
+nnoremap <A-8> :A<CR>
