@@ -19,7 +19,6 @@ Plug 'brooth/far.vim'                                     " Search and replace
 Plug 'Yggdroot/indentLine'                                " Show indent as vertical lines
 Plug 'kshenoy/vim-signature'                              " Show marks in the gutter
 Plug 'airblade/vim-gitgutter'                             " Git diff icons in gutter
-Plug 'vim-scripts/restore_view.vim'                       " Restore file pointer on file open
 Plug 'airblade/vim-rooter'                                " auto change dir to project root
 Plug 'Konfekt/vim-CtrlXA'                                 " Use ctrl-X/A to toggle values
 Plug 'metakirby5/codi.vim'                                " REPL
