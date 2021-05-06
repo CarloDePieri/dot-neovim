@@ -15,6 +15,7 @@ nmap <F3>                 <Plug>VimspectorStop
 nmap <F4>                 <Plug>VimspectorRestart
 
 nmap <F5>                 <Plug>VimspectorContinue
+nmap <leader><F5>         :VimspectorReset<CR>
 
 nmap <F6>                 <Plug>VimspectorPause
 
@@ -41,6 +42,13 @@ command! -bar
 "   "configurations": {
 "     "Tests: Launch": {
 "       "adapter": "debugpy",
+"       "breakpoints": {
+"         "exception": {
+"           "raised": "",
+"           "caught": "",
+"           "uncaught": "Y"
+"         }
+"       },
 "       "configuration": {
 "         "name": "Tests: Launch",
 "         "type": "python",

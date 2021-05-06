@@ -35,12 +35,6 @@ def test_`!p snip.rv = test_name(t[1])`(${2:self}):
 	${3}${0}
 endsnippet
 
-snippet tt "A simple pytest test from a test collection" b
-def test_`!p snip.rv = test_name(t[1])`(${2:self}):
-	"""... it ${1:description}"""
-	${3}${0}
-endsnippet
-
 snippet tcoll "A pytest test collection" b
 class Test`!p snip.rv = test_class_name(t[1])`${2:()}:
 	"""${1:A description}..."""
@@ -60,4 +54,8 @@ endsnippet
 
 snippet af "Assert False" !b
 assert False
+endsnippet
+
+snippet tt "pytest runthis marker" !b
+@pytest.mark.runthis
 endsnippet
