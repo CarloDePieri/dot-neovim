@@ -6,8 +6,8 @@ nnoremap <leader>ts     :w\|Pytest<CR>
 " launch <T>est <F>ile
 nnoremap <leader>tf     :w\|PytestFile<CR>
 " launch <T>est <N>earest
-nnoremap <leader>tn     :w\|PytestNearest<CR>
-nnoremap <leader>t<leader>     :w\|PytestNearest<CR>
+nnoremap <leader>tn     :w\|PytestNearest<CR><CR>
+nnoremap <leader>t<leader>     :w\|PytestNearest<CR><CR>
 " launch <T>est <R>epeat
 nnoremap <leader>tr     :w\|PytestLast<CR>
 " relaunch <T>est last failed (<X>)
@@ -16,6 +16,8 @@ nnoremap <leader>tx     :w\|PytestLastFailed<CR>
 nnoremap <leader>tt     :w\|PytestToggleError<CR>
 " open <T>est <O>utput
 nnoremap <leader>to     :w\|PytestOutput<CR>
+" launch <T>est <C>lear
+nnoremap <leader>tc     :w\|PytestClear<CR>
 
 " Mappings useful for navigating the quickfix windowa (even with only one
 " entry)
