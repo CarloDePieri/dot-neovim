@@ -19,9 +19,9 @@
 " 
 " CURRENTYL INSTALLED EXTENSIONS
 "
-" pyright           Intellisense for python
-" json              Intellisense for json
-" browser           Use the browser as autocompletion source
+" coc-pyright           Intellisense for python
+" coc-json              Intellisense for json
+" coc-browser           Use the browser as autocompletion source
 " coc-sh            Intellisense for bash
 " coc-markdownlint  Linting for markdown
 " coc-yaml          Intellisense for yaml
@@ -34,10 +34,17 @@
 "
 """
 
-
-
-
-
+let g:coc_global_extensions = [
+      \"coc-pyright",
+      \"coc-json",
+      \"coc-browser",
+      \"coc-sh",
+      \"coc-markdownlint",
+      \"coc-yaml",
+      \"coc-css",
+      \"coc-toml",
+      \"coc-ultisnips"
+      \]
 
 
 "
