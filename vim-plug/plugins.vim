@@ -60,7 +60,6 @@ Plug '~/dev/pytest-vim-compiler'                   " Pytest :compiler
 Plug 'Shougo/neco-vim'
 Plug 'neoclide/coc-neco'
 
-
 " Plug 'Zuckonit/vim-airline-tomato'
 call plug#end()
 
