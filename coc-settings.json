@@ -13,6 +13,11 @@
   // Python language server
   "python.formatting.autopep8Args":["--max-line-length=100"],
   "python.linting.flake8Enabled":true,
-  "coc.preferences.formatOnSaveFiletypes":["python"]
-
+  "coc.preferences.formatOnSaveFiletypes":["python"],
+  "suggest.virtualText": true,
+  "suggest.autoTrigger": "always",
+  "suggest.floatConfig": {
+    "border": false,
+    "shadow": true
+  }
 }
