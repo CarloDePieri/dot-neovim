@@ -19,7 +19,12 @@ nnoremap <leader>to     :w\|PytestOutput<CR>
 " launch <T>est <C>lear
 nnoremap <leader>tc     :w\|PytestClear<CR>
 
-" Mappings useful for navigating the quickfix windowa (even with only one
+" Mappings useful for navigating the quickfix window (even with only one
 " entry)
 nnoremap ]q :<C-R>=len(getqflist())==1?"cc":"cn"<CR><CR>
 nnoremap [q :<C-R>=len(getqflist())==1?"cc":"cp"<CR><CR>
+
+" let g:pytest_xml_file="/tmp/junit.xml"
+" let g:pytest_airline_section="b"
+" let g:pytest_airline_icon="PT"
+" let g:pytest_airline_separator_icons=[')', '(']

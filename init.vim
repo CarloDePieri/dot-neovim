@@ -7,6 +7,7 @@ execute "source " . prefix . "vim-plug/plugins.vim"
 " Specify this here so that plugins can know about my leader
 let mapleader = ","
 
+      "\ "plug-config/far.vim",
 " Plugins' config files + my settings and keybinds
 let config_files = [
       "\ --------- PLUGINS ---------
@@ -17,7 +18,6 @@ let config_files = [
       \ "plug-config/airline.vim",
       \ "plug-config/indentline.vim",
       \ "plug-config/easymotion.vim",
-      \ "plug-config/far.vim",
       \ "plug-config/surround.vim",
       \ "plug-config/fzf.vim",
       \ "plug-config/codi.vim",
@@ -33,6 +33,10 @@ let config_files = [
       \ "plug-config/projectionist.vim",
       \ "plug-config/debugger.vim",
       \ "plug-config/treesitter.vim",
+      \ "plug-config/black.vim",
+      \ "plug-config/ansible.vim",
+      \ "plug-config/spectre.vim",
+      \ "plug-config/lazygit.vim",
       "\ --------- SETTINGS ---------
       \ "general/settings.vim",
       \ "general/keybinds.vim",

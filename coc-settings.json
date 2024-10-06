@@ -4,20 +4,39 @@
   "diagnostic.infoSign": "",
   // Yaml language server
   // "yaml.format.enable":true,
-  "yaml.validate":false,
-  "yaml.schemas":{},
-    // "file:///home/cik/dev/ansible/ansible-role-2.9.json": ["*.yml", "*.yaml"]
+  // "yaml.validate":true,
+  // "yaml.schemas":{
+    // "file:///home/cik/dev/ansible/ansible-role-2.9.json": ["*.yml", "*.yaml"],
     // "file:///home/cik/dev/ansible/ansible-playbook.json": ["*.yml", "*.yaml"],
     // "https://json.schemastore.org/ansible-collection-galaxy": ["*/meta/main.yml", "**/meta/main.yml"]
   // },
+  "coc": {
+    "source": {
+      "ultisnips": {
+        // keep this low so they go last
+        "priority": 0
+      }
+    }
+  },
+  // Terraform
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {}
+    }
+  },
   // Python language server
   "python.formatting.autopep8Args":["--max-line-length=100"],
   "python.linting.flake8Enabled":true,
-  "coc.preferences.formatOnSaveFiletypes":["python"],
   "suggest.virtualText": true,
   "suggest.autoTrigger": "always",
   "suggest.floatConfig": {
     "border": false,
     "shadow": true
-  }
+  },
+  // ansible
+  "ansible.builtin.force": "true",
+  "ansible.validation.lint.enabled": true
 }

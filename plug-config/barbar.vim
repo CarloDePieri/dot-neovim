@@ -1,10 +1,12 @@
-let bufferline = {}
-
-" Enable/disable animations
-let bufferline.animation = v:false
-
-" Enable/disable auto-hiding the tab bar when there is a single buffer
-let bufferline.auto_hide = v:true
+let g:barbar_auto_setup = v:false " disable auto-setup
+lua << EOF
+require'barbar'.setup {
+  -- Enable/disable animations
+  animation = false,
+  -- Enable/disable auto-hiding the tab bar when there is a single buffer
+  auto_hide = false
+}
+EOF
 
 " Set colors
 augroup barbar_colors

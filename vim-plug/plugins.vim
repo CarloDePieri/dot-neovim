@@ -15,10 +15,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'                                 " A fancy start page for vim
 Plug 'kevinhwang91/rnvimr'                                " Ranger integration. Needs yay -S python-pynvim ueberzug
 Plug 'romgrk/barbar.nvim'                                 " Tabs
-Plug 'brooth/far.vim'                                     " Search and replace
 Plug 'Yggdroot/indentLine'                                " Show indent as vertical lines
 Plug 'kshenoy/vim-signature'                              " Show marks in the gutter
 Plug 'airblade/vim-gitgutter'                             " Git diff icons in gutter
+Plug 'kdheepak/lazygit.nvim'                              " Lazygit integration
 Plug 'airblade/vim-rooter'                                " auto change dir to project root
 Plug 'Konfekt/vim-CtrlXA'                                 " Use ctrl-X/A to toggle values
 Plug 'metakirby5/codi.vim'                                " REPL
@@ -34,6 +34,9 @@ Plug 'rhysd/devdocs.vim'                                  " Show devdocs docs
 Plug 'tpope/vim-projectionist'                            " Project structure
 Plug 'puremourning/vimspector'                            " Debugger
 Plug 'nvim-treesitter/nvim-treesitter',{'do':':TSUpdate'} " Treesitter - more powerfull syntax highlighter
+" Plug 'brooth/far.vim'                                   " Search and replace... let's see how nvim-spectre fares...
+Plug 'nvim-lua/plenary.nvim'                              " needed by nvim-spectre
+Plug 'nvim-pack/nvim-spectre'                             " Search and replace
 
 " Movement
 Plug 'unblevable/quick-scope'                             " Show char when using f, t, etc
@@ -51,10 +54,12 @@ Plug 'kevinoid/vim-jsonc'                                 " Json with comments
 Plug 'cespare/vim-toml'                                   " toml syntax highlights
 Plug 'rhysd/vim-grammarous'                               " English grammar
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }  " Markdown browser preview
-" Plug 'CarloDePieri/pytest-vim-compiler'                   " Pytest :compiler
+" Plug 'CarloDePieri/pytest-vim-compiler'                 " Pytest :compiler
 " Plug 'CarloDePieri/vim-pytest'
 Plug '~/dev/vim-pytest'
-Plug '~/dev/pytest-vim-compiler'                   " Pytest :compiler
+Plug '~/dev/pytest-vim-compiler'                          " Pytest :compiler
+Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }  " Ansible
+Plug 'averms/black-nvim', {'do': ':UpdateRemotePlugins'}  " black for python
 
 " Vim
 Plug 'Shougo/neco-vim'

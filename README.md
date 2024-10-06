@@ -24,3 +24,11 @@ URxvt.font: xft:DejaVuSansMono Nerd Font Mono:style=Book:pixelsize=16
 ```
 
 Also, remember to have an updated `.rgignore` or fzf will be slow inside nvim.
+
+
+### Update routine
+
+- `:PlugUpdate` > updates vim-plug
+- `:PlugUpgrade` > updates plugins
+- `:CocUpdate` > updates coc (completions, intellisense, language servers integration)
+- `:TSUpdate` > updates tree sitter definitions

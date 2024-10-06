@@ -41,13 +41,13 @@ let g:coc_global_extensions = [
       \"coc-sh",
       \"coc-browser",
       \"coc-markdownlint",
-      \"coc-yaml",
       \"coc-css",
       \"coc-toml",
       \"coc-clangd",
-      \"coc-ultisnips"
+      \"coc-ultisnips",
+      \"coc-yaml",
+      \"@yaegassy/coc-ansible"
       \]
-
 
 "
 " SETTINGS
