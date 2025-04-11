@@ -46,7 +46,8 @@ let g:coc_global_extensions = [
       \"coc-clangd",
       \"coc-ultisnips",
       \"coc-yaml",
-      \"@yaegassy/coc-ansible"
+      \"@yaegassy/coc-ansible",
+      \"@yaegassy/coc-intelephense"
       \]
 
 "
@@ -214,7 +215,7 @@ omap ac <Plug>(coc-classobj-a)
 " MULTICURSOR MODE
 "
 " Keep hitting Alt+m for jumping and selecting next word
-nmap <expr> <silent> <M-m> <SID>select_current_word()
+nnoremap <expr> <silent> <M-m> <SID>select_current_word()
 function! s:select_current_word()
   if !get(b:, 'coc_cursors_activated', 0)
     return "\<Plug>(coc-cursors-word)"
