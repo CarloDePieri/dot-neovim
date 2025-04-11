@@ -32,11 +32,15 @@ Plug 'neomake/neomake'                                    " Run sync make with v
 Plug 'vim-test/vim-test'                                  " Test launcher
 Plug 'rhysd/devdocs.vim'                                  " Show devdocs docs
 Plug 'tpope/vim-projectionist'                            " Project structure
-Plug 'puremourning/vimspector'                            " Debugger
 Plug 'nvim-treesitter/nvim-treesitter',{'do':':TSUpdate'} " Treesitter - more powerfull syntax highlighter
 " Plug 'brooth/far.vim'                                   " Search and replace... let's see how nvim-spectre fares...
 Plug 'nvim-lua/plenary.nvim'                              " needed by nvim-spectre
 Plug 'nvim-pack/nvim-spectre'                             " Search and replace
+
+" NVIM debugger
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
+Plug 'rcarriga/nvim-dap-ui'
 
 " Movement
 Plug 'unblevable/quick-scope'                             " Show char when using f, t, etc
