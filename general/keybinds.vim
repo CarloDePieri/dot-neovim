@@ -59,6 +59,9 @@ nnoremap q: :q
 "
 " Text morphing
 "
+" Simple replace
+vnoremap <leader>R y:%s/<C-r><C-r>"//gic<Left><Left><Left><Left>
+nnoremap <leader>R viwy:%s/<C-r><C-r>"//gic<Left><Left><Left><Left>
 
 " better indentation change
 vnoremap > >gv
