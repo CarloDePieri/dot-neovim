@@ -3,6 +3,11 @@ set shell=/bin/bash
 
 " Theme
 colorscheme zenburn
+" tweaks to the visual background color
+hi Visual        guibg=#2f2f2f  ctermbg=235
+hi VisualNOS     guibg=#2f2f2f  ctermbg=235
+" LSP hints colors
+hi DiagnosticHint guifg=#6a828a ctermfg=255
 
 " Python 2 & 3 envs
 let g:python3_host_prog = '/home/cik/.virtualenvs/neovim/bin/python'                                                         

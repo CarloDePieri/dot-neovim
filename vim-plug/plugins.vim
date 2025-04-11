@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Aesthetic
-Plug 'jnurmine/Zenburn'                                   " color scheme
+Plug 'phha/zenburn.nvim'                                  " color scheme
 Plug 'vim-airline/vim-airline'                            " airline
 Plug 'vim-airline/vim-airline-themes'                     " airline themes
 Plug 'ryanoasis/vim-devicons'                             " Icons
