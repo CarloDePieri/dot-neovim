@@ -37,6 +37,7 @@ let config_files = [
       \ "plug-config/ansible.vim",
       \ "plug-config/spectre.vim",
       \ "plug-config/lazygit.vim",
+      \ "plug-config/gen.vim",
       "\ --------- SETTINGS ---------
       \ "general/settings.vim",
       \ "general/keybinds.vim",

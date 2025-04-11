@@ -52,6 +52,7 @@ Plug 'tpope/vim-repeat'                                   " Allows . to work wit
 Plug 'tpope/vim-surround'                                 " Surround
 Plug 'scrooloose/nerdcommenter'                           " Easy comment code
 Plug 'jiangmiao/auto-pairs'                               " Autopair
+Plug 'David-Kunz/gen.nvim'                                " ollama
 
 " Language specific
 Plug 'kevinoid/vim-jsonc'                                 " Json with comments
